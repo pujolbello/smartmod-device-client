@@ -1,0 +1,5 @@
+.pio/
+.vscode/
+*.tar.gz
+__pycache__/
+*.pyc

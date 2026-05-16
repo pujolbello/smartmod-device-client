@@ -1,0 +1,52 @@
+{
+  "name": "SmartMod",
+  "version": "0.1.0",
+  "description": "Cliente modular para la plataforma SmartMod sobre ESP32: WiFi + MQTT no bloqueante, portal cautivo de provisioning, persistencia NVS y capabilities componibles (GPIO, Measurement).",
+  "keywords": [
+    "smartmod",
+    "iot",
+    "mqtt",
+    "esp32",
+    "wifimanager",
+    "captive-portal",
+    "provisioning"
+  ],
+  "homepage": "https://smartmod.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pujolbello/smartmod-device-client.git"
+  },
+  "authors": [
+    {
+      "name": "Tecnoconciencia",
+      "url": "https://smartmod.app",
+      "maintainer": true
+    }
+  ],
+  "license": "Apache-2.0",
+  "frameworks": ["arduino"],
+  "platforms": ["espressif32"],
+  "headers": "SmartMod.h",
+  "dependencies": [
+    { "name": "PubSubClient", "version": "^2.8" },
+    { "name": "ArduinoJson", "version": "^7.2.1" }
+  ],
+  "build": {
+    "srcDir": "src"
+  },
+  "export": {
+    "include": [
+      "src",
+      "examples",
+      "library.json",
+      "README.md",
+      "LICENSE"
+    ],
+    "exclude": [
+      ".pio",
+      ".vscode",
+      "*.pyc",
+      "__pycache__"
+    ]
+  }
+}

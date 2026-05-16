@@ -24,7 +24,7 @@ struct Config {
 
   // Identidad lógica dentro de la plataforma SmartMod
   String workspace = "workspace";   // raíz del namespace
-  String organization;              // p.ej. "tecnoconciencia"
+  String organization;              // p.ej. "smartmod"
   String user;                      // p.ej. "pujolbello"
   uint8_t protocolVersion = 1;      // v1, v2, ...
 

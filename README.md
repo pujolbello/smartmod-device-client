@@ -229,11 +229,11 @@ workspace/{org}/{user}/{deviceId}/v{N}/{direction}/{category}/{format}
 - El dispositivo se **suscribe** a `.../v{N}/input/#`.
 - Bumpeando `protocolVersion` puedes evolucionar el contrato sin romper dispositivos anteriores.
 
-Ejemplos (con `org=tecnoconciencia`, `user=pujolbello`, `deviceId=ESP32-AABBCC`, `v1`):
+Ejemplos (con `org=smartmod`, `user=pujolbello`, `deviceId=ESP32-AABBCC`, `v1`):
 
 | Dirección | Categoría     | Formato | Tópico |
 |-----------|---------------|---------|--------|
-| output    | `status`      | `json`  | `workspace/tecnoconciencia/pujolbello/ESP32-AABBCC/v1/output/status/json` |
+| output    | `status`      | `json`  | `workspace/smartmod/pujolbello/ESP32-AABBCC/v1/output/status/json` |
 | output    | `gpio`        | `json`  | `…/v1/output/gpio/json` |
 | output    | `measurement` | `json`  | `…/v1/output/measurement/json` |
 | input     | `gpio`        | `json`  | `…/v1/input/gpio/json` |
@@ -428,4 +428,4 @@ if (digitalRead(0) == LOW && millis() > 30000) mod.factoryReset();
 
 ## Licencia
 
-[Apache-2.0](LICENSE) © Tecnoconciencia
+[Apache-2.0](LICENSE) © SmartMod

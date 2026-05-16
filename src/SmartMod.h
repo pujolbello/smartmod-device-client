@@ -29,7 +29,7 @@ namespace smartmod {
  *     cfg.wifiSsid = "...";
  *     cfg.wifiPassword = "...";
  *     cfg.mqttHost = "api.smartmod.app";
- *     cfg.organization = "tecnoconciencia";
+ *     cfg.organization = "smartmod";
  *     cfg.user = "pujolbello";
  *     mod.use(gpio);
  *     mod.use(meas);
